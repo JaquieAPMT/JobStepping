@@ -5,8 +5,6 @@
 This script checks for TTs  within a certain radius of a given location and sends the list of TTs to an endpoint via HTTP POST. The script is called by the tagChange function in Ignition, an industrial application platform.
 
 ## Requirements
-
-- Python 3.6 or higher
 - Ignition platform (for the tagChange function)
 - `system` module
 - `json` module
