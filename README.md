@@ -1,6 +1,6 @@
 # JobStepping
 
-# Job Stepping tt_close_to_rtg
+# Job Stepping JobStepping/get_tts_close_to_rtg
 
 This script checks for TTs  within a certain radius of a given location and sends the list of TTs to an endpoint via HTTP POST. The script is called by the tagChange function in Ignition, an industrial application platform.
 
@@ -24,7 +24,7 @@ The `find_tt_within_radius` function takes the latitude and longitude of a locat
 
 The `send_data_to_endpoint` function takes the RTG name, event name, spreader name, and list of TTs as arguments and sends them to an endpoint via HTTP POST.
 
-# RTG Stack Events
+# RTG Stack Events JobStepping/rtg_stack_events
 
 This script sends data to an endpoint when a tag is changed.
 
@@ -48,7 +48,7 @@ This script will execute an HTTP POST request to the endpoint `http://172.18.125
 
 If the request is successful, the data will be sent to the specified endpoint. If there is an error sending the data, an error message will be logged.
 
-# RTG Stack Events
+# Tag Change RTG Stack Events TAG_RTG_TT_Drop and TAG_RTG_TT_Lift
 
 This code consists of a set of Python scripts for sending real-time event data from a Rubber Tyred Gantry (RTG) crane to an HTTP endpoint.
 
